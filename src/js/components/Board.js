@@ -9,6 +9,7 @@ import Piece from './Piece';
 
 import Sidebar from './Sidebar';
 import MoveHistory from './MoveHistory';
+import DistanceTravelled from './DistanceTravelled';
 
 /**
  * This is the root react component. Replace everything in here
@@ -84,14 +85,17 @@ class Board extends Component {
                     <Sidebar win={win} />
                 </div>
                 <MoveHistory />
+                <DistanceTravelled />
             </div>
         );
     }
 }
 
 function mapStateToProps(state) {
-    return { pieces: state.pieces.pieces,
-            win: state.pieces.win };
+    return {
+        pieces: state.pieces.pieces,
+        win: state.pieces.win,
+    };
 }
 
 export default connect(mapStateToProps)(DragDropContext(HTML5Backend)(Board));

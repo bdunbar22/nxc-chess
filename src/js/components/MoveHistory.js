@@ -29,7 +29,7 @@ class MoveHistory extends Component {
             this.renderMove(move, Math.floor(i / 2)));
 
         return (
-            <div style={{ overflow: 'hidden', padding: '10px', paddingTop: '0px' }}>
+            <div style={{ overflow: 'hidden', padding: '10px', paddingTop: '0px', width: '200px', float: 'left' }}>
                 <h2 style={{ marginTop: '0px', marginBottom: '5px' }} > Move History </h2>
                 { moveViews }
             </div>

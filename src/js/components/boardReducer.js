@@ -82,6 +82,8 @@ export default function piecesMap(state = initialState, action = {}) {
             killedPiece: payload.killedPiece,
             newCol: payload.newCol,
             newRow: payload.newRow,
+            oldCol: payload.oldCol,
+            oldRow: payload.oldRow,
             color: state.turn,
         };
     }
