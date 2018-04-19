@@ -2,7 +2,7 @@
 import React, { Component, PropTypes as Type } from 'react';
 import { connect } from 'react-redux';
 
-class MoveHistory extends Component {
+class DistancdTravelled extends Component {
     static propTypes = {
         completedMoves: Type.array,
     };
@@ -66,4 +66,4 @@ function mapStateToProps(state) {
     return { completedMoves: state.pieces.completedMoves };
 }
 
-export default connect(mapStateToProps)(MoveHistory);
+export default connect(mapStateToProps)(DistancdTravelled);
